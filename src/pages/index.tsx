@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header'
 import { Menu } from '../components/Menu/Menu';
 import styles from '../styles/Home.module.css';
@@ -19,6 +20,7 @@ export default function Home() {
 
 
       <Menu/>
+      <Footer/>
 
     </div>
 

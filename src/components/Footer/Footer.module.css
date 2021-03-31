@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    flex-direction: row;
+  
+    
+
+    width: 980px;
+    height: 113px;
+
+    background: #265680;
+
+    margin-top: 50px;
+    margin-bottom: 88px;
+
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:95px ;
+    margin-right: 60px;
+    
+   
+
+}
+
+.contact p{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location p{
+    width: 300px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+
+    color: #FFFFFF;
+
+    margin-right: 5px;
+
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register p{
+    width: 174px;
+  
+  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+
+    color: #FFFFFF;
+
+    margin-right: 51px;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.facebook {
+    width: 40px ;
+    height: 40px;
+}
+
+.instagram {
+    width: 40px ;
+    height: 40px;
+}
+
+.youtube {
+    width: 40px ;
+    height: 40px;
+}
+
+.twitter{
+    width: 40px ;
+    height: 40px;
+}
