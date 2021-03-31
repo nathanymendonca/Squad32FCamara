@@ -1,0 +1,54 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ame{
+    position: absolute;
+    width: 904px;
+    height: 50px;
+    left: 178.5px;
+    top: 85px;
+    
+    font-family: Fredericka the Great;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 49px;
+    /* identical to box height, or 110% */
+    
+    text-align: center;
+    
+    color: #000000;
+
+    
+
+}
+
+.square{
+    position: absolute;
+    width: 980px;
+    height: 59px;
+    left: 150.5px;
+    top: 185px;
+    
+    /* green */
+    
+    background: #88B235;
+   
+    
+}
+
+.logo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 610px;
+    top: 15px;
+    
+    
+
+}
