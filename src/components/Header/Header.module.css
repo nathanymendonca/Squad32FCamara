@@ -7,19 +7,18 @@
 }
 
 .ame{
-    position: absolute;
+    margin-top: 5px;
+    
     width: 904px;
     height: 50px;
-    left: 178.5px;
-    top: 85px;
+   
     
     font-family: Fredericka the Great;
     font-style: normal;
     font-weight: normal;
     font-size: 45px;
     line-height: 49px;
-    /* identical to box height, or 110% */
-    
+
     text-align: center;
     
     color: #000000;
@@ -29,11 +28,12 @@
 }
 
 .square{
-    position: absolute;
+
+    margin-top: -10px;
+    
     width: 980px;
     height: 59px;
-    left: 150.5px;
-    top: 185px;
+    
     
     /* green */
     
@@ -43,12 +43,23 @@
 }
 
 .logo{
-    position: absolute;
+
+    
     width: 70px;
     height: 70px;
-    left: 610px;
-    top: 15px;
+
+}
+
+.lineGray{
+
+    margin-top: 3px;
+    margin-bottom: 6px;
     
+ 
+    width: 960px;
+    height: 1px;
+ 
     
+    background: rgba(0, 0, 0, 0.3);
 
 }

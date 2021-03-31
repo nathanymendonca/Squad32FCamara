@@ -1,65 +1,19 @@
 .container{
+ 
+    width: 100%;
+    display: flex;
+    padding: 1rem 10.5rem;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+}
 
-  position: relative;
-  width: fit-content;
-  height: 1227px;
 
-  /* white */
-
-  background: #FFFFFF;
+.section img{
   align-items: center;
-}
-
-.lineGray{
-  position: absolute;
-  width: 960px;
-  height: 1px;
-  left: 160px;
-  top: 246px;
-
-  background: rgba(0, 0, 0, 0.3);
-
-}
-
-.capa{
-  position: absolute;
-  width: 958px;
-  height: 463px;
-  left: 161.5px;
-  top: 250px;
-}
-
-.lineOrange{
-  position: absolute;
-  width: 980px;
-  height: 1px;
-  left: 149px;
-  top: 717px;
-  
-  background: #F9BF51;
-
-}
-
-.menu{
-  
-  position: absolute;
-  width: 980px;
-  height: 268px;
-  left: 149px;
-  top: 733px;
-
-  
-  background: #F9BF51;
-  border-radius: 0px;
-
-}
-
-.IconPlus{
-  position: absolute;
-width: 40px;
-height: 40px;
-left: 309px;
-top: 739px;
+  margin: 0px;
 
 
 }
+

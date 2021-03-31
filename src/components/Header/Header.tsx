@@ -11,6 +11,7 @@ export function Header(){
             </h1>
 
             <div className={styles.square}></div>
+            <div className={styles.lineGray}></div>
 
 
 

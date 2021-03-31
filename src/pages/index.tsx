@@ -1,5 +1,6 @@
-
+import React from 'react';
 import { Header } from '../components/Header/Header'
+import { Menu } from '../components/Menu/Menu';
 import styles from '../styles/Home.module.css';
 
 
@@ -8,23 +9,18 @@ export default function Home() {
     <div className={styles.container}>
 
       <Header/>
-      <div className={styles.lineGray}></div>
-      <img className={styles.capa} src="/images/capa.png" alt="capa"/>
 
-      <div className={styles.lineOrange}></div>
+      <section>
+         
+          <img className={styles.capa} src="/images/capa.png" alt="capa"/>
 
-      <div className={styles.menu}>
-        <div className={styles.receiver}>
-          <img className={styles.iconPlus} src="/icons/plus.svg" alt="plus"/>
-          <h1 className={styles.textReceiver}>
-            RECEBER DOAÇÃO
-          </h1>
-
-        </div>
+          
+      </section>
 
 
-      </div>
+      <Menu/>
 
     </div>
+
   )
 }
