@@ -21,66 +21,47 @@
     
 }
 .contact{
-    display: flex;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     margin-left:95px ;
     margin-right: 60px;
-    
+    line-height: 0.5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
    
 
 }
 
-.contact p{
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    color: #FFFFFF;
-}
-
 .location{
-    display: flex;
+    margin-top: 18px;
     flex-direction: column;
-    justify-content: center;
-}
-
-.location p{
+    justify-content: center;    
     width: 300px;
-
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-
-
+    font-size: 15px;       
+    line-height: 0.4;
     color: #FFFFFF;
-
     margin-right: 5px;
-
 }
+
 
 .register{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.register p{
-    width: 174px;
-  
-  
+    width: 174px;  
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-
-
     color: #FFFFFF;
-
     margin-right: 51px;
-
 }
+
 
 .icons{
     display: flex;
