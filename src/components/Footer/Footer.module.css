@@ -1,25 +1,18 @@
 .container{
     display: flex;
     flex-direction: row;
-  
-    
-
     width: 980px;
     height: 113px;
-
     background: #265680;
-
     margin-top: 50px;
     margin-bottom: 88px;
-
-    
 }
 
 .text{
     display: flex;
     flex-direction: row;
-    
 }
+
 .contact{
     margin: auto;
     flex-direction: column;
@@ -31,9 +24,8 @@
     font-weight: normal;
     font-size: 15px;
     color: #FFFFFF;
-   
-
 }
+
 
 .location{
     margin-top: 18px;
