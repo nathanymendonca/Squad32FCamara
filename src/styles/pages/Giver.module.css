@@ -1,4 +1,71 @@
 .container{
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("/images/background.png") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11px;
+  
+    width: 980px;
+    height: max-content;
+    background-color: white;
+
+}
+
+.section h1{
+    width: 219px;
+    height: 27px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #292929;
+
+    margin-top: 69px;
+}
+
+.choiceBar{
+    width: 980px;
+    height: 204px;
+
+    margin-top: 11px;
+    margin-bottom: 39px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+}
+
+.choiceSchool{
+    width: 800px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #C6E2F7;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    margin-top: 47px;
+    margin-bottom: 18px;
+}
+
+.example2{
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+.doar{
+    margin-bottom: 100px;
 }
