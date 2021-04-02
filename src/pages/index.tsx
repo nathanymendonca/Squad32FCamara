@@ -29,7 +29,15 @@ export default function Home() {
                 <div className={styles.schoolSquare}>
                     <img src="/icons/data.svg" alt="data"/>
                     <h1>ESCOLAS</h1>
-                    <p>ACESSE A ÁREA EXCLUSIVA</p>
+                    <p>           
+                    <Link  href="/schools">
+                        <a title="">ACESSE A ÁREA EXCLUSIVA </a> 
+                    </Link>
+                    </p>
+                    
+
+
+
                 </div>
 
                 <div className={styles.whiteLine2}></div>

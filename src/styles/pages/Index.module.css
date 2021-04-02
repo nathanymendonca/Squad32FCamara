@@ -153,8 +153,10 @@
   text-align: center;
 
   margin-bottom: 92px;
+}
 
-
+.schoolSquare a{
+  color: red;
 }
 
 .whiteLine2{

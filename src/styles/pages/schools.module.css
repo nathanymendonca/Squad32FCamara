@@ -1,0 +1,87 @@
+.container{
+    margin-top:15px;
+
+
+    
+    
+    flex-direction: column;
+    align-items: center;  
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+.section{
+    position: absolute;
+    left: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+  
+    width: 980px;
+    height: max-content;
+    
+
+}
+
+.section h1{
+    width: 221px;
+    height: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+
+    text-align: center;
+
+    color: #292929;
+
+    margin-top: 15px;
+}
+
+
+.schooldata{
+    position: absolute;
+    width: 673px;
+    height: 297px;
+    top: 348px;
+    right: -365px;   
+    margin-top: -275px;
+    max-width: 100%;
+    display: inline-block;  
+    
+}
+
+.cadastro h1{
+    margin-top:37px;
+    width:250px;
+    height:133px;    
+   
+   
+    background-image: url("/icons/rectangle.svg") ;
+    font-family:roboto;
+    font-style: normal;
+    font-size: 12px;
+    line-height:40px;
+     
+}
+
+.exit{
+    width:87px;
+    height:23px;
+    align: left;
+   
+   
+    margin-top: -51px ;
+   
+    
+   
+    
+
+}
+
+
+
