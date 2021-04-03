@@ -4,7 +4,7 @@
     width: 980px;
     height: 113px;
     background: #265680;
-    margin-bottom: 88px;
+    margin-bottom: 8px;
 }
 
 .text{
@@ -13,50 +13,47 @@
 }
 
 .contact{
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    margin-left:95px ;
+    margin-top: 25px;
+    margin-left:30px ;
     margin-right: 60px;
-    line-height: 0.5;
+    line-height: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     color: #FFFFFF;
+
+    
 }
 
 
 .location{
-    margin-top: 18px;
-    flex-direction: column;
-    justify-content: center;    
+    margin-top: 25px;
     width: 300px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;       
-    line-height: 0.4;
+    line-height: 15px;
     color: #FFFFFF;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 
 .register{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 174px;  
+    margin-top: 25px;
+    width: 200px;  
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
-    margin-right: 51px;
+    margin-right: 30px;
 }
 
 
 .icons{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .facebook {
@@ -77,4 +74,42 @@
 .twitter{
     width: 40px ;
     height: 40px;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: right;
+        
+    
+    }
+
+    .text{
+       margin: 0;
+       line-height: 15px;
+
+    }
+    
+    .contact{
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+    
+    .location{
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+
+    .register{
+        margin-bottom: 20px;
+    }
+
+    .icons{
+        justify-content: space-around;
+    }
+
+
 }

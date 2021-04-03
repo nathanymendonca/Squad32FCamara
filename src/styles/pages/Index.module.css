@@ -223,18 +223,20 @@
 }
 
 @media screen and (max-width: 700px) {
+
   .container{
-    width: 100%;
-    padding: 8px;
-    
-   
-   
+    max-width: 100%;
+    overflow: hidden;
+    height: max-content;
+    min-width: 360px;
+    padding: 5px;
+  
   }
 
   .section{
     flex-direction: column;
-    margin-bottom: 10px;
-    height: auto;
+    height: fit-content;
+   
     
   }
 
@@ -247,5 +249,21 @@
     width: 100vh;
     height: 2px;
   }
+
+  .receiverSquare{
+    margin: 0;
+
+  }
+
+  .schoolSquare{
+    margin: 0;
+  }
+
+  .giverSquare{
+    margin: 0;
+  }
+
+  
+
 
 }

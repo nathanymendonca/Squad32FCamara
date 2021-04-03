@@ -34,9 +34,6 @@ export default function Home() {
                         <a title="">ACESSE A ÁREA EXCLUSIVA </a> 
                     </Link>
                     </p>
-                    
-
-
 
                 </div>
 
