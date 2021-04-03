@@ -1,3 +1,4 @@
+
 .container{
  
     width: 100%;
@@ -222,7 +223,8 @@
   
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 700px){
 
   .container{
     max-width: 100%;
@@ -263,7 +265,46 @@
     margin: 0;
   }
 
-  
-
 
 }
+
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+  .container{
+     max-width: 100%;
+     overflow: hidden;
+     height: max-content;
+     min-width: 700px;
+     padding: 5px;
+  }
+
+
+  .section{
+    width: 100%;
+  }
+
+  .receiverSquare{
+    margin: 0;
+
+  }
+
+  .schoolSquare{
+    margin: 0;
+  }
+
+  .giverSquare{
+    margin: 0;
+  }
+
+  .whiteLine1 {
+    display: none;
+    margin: 0;
+  }
+  
+  .whiteLine2{
+    display: none;
+    margin: 0;
+  }
+
+}
+

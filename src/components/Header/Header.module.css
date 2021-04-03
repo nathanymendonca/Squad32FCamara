@@ -1,4 +1,4 @@
-
+  
 .container{
     display: flex;
     flex-direction: column;
@@ -69,8 +69,6 @@
         flex-direction: row;
         padding: 5px;
         height: auto;
-        
-    
     }
    
     .ame {
@@ -81,10 +79,23 @@
     .square{
         display: none;
     }
-    .logo{
-        
-    }
+    
     .lineGray{
         display: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:1024px){
+    .container{
+        padding: 5px;
+        height: max-content;
+    }
+
+    .ame{
+        height: max-content;
+    }
+
+    .square{
+        height: 30px;
     }
 }
