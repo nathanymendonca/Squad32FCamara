@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selects{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    
+
+   
+}

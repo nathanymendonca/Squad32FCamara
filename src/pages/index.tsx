@@ -22,7 +22,11 @@ export default function Home() {
                     <img src="/icons/plus.svg" alt="plus"/>
                     <h1>RECEBER DOAÇÃO</h1>
                     
-                    <p>CADASTRE-SE OU 
+                    <p>
+                      <Link href="/receiverRegister">
+                        <a title="">CADASTRE-SE </a>
+                      </Link>
+                      OU 
                       <Link  href="/receiverLogin">
                         <a title=""> FAÇA LOGIN</a> 
                     </Link>

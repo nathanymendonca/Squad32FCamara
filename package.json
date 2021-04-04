@@ -12,6 +12,7 @@
     "@fluentui/react-northstar": "^0.53.0",
     "@uifabric/merge-styles": "^7.19.2",
     "@uifabric/utilities": "^7.33.5",
+    "evergreen-ui": "^5.1.2",
     "formik": "^2.2.6",
     "next": "10.1.2",
     "react": "17.0.2",
