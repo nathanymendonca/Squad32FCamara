@@ -23,7 +23,7 @@ export default function Home() {
                     <h1>RECEBER DOAÇÃO</h1>
                     
                     <p>CADASTRE-SE OU 
-                      <Link  href="/userLogin">
+                      <Link  href="/receiverLogin">
                         <a title=""> FAÇA LOGIN</a> 
                     </Link>
                     </p>

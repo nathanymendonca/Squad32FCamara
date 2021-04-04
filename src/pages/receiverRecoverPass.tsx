@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Formik, Field, Form } from 'formik';
 
-import styles from '../styles/pages/userRecoverPass.module.css';
+import styles from '../styles/pages/receiverRecoverPass.module.css';
 import { Button } from '../components/Button/Button';
 
 const  userRecoverPass= () => (

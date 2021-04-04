@@ -95,6 +95,10 @@
 
 }
 
+.receiverSquare a{
+  color: red;
+}
+
 .whiteLine1{
   align-self: center;
 
