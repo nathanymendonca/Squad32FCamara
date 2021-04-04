@@ -6,6 +6,7 @@ import styles from '../styles/pages/Index.module.css';
 
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
 
@@ -20,7 +21,12 @@ export default function Home() {
                 <div className={styles.receiverSquare}>
                     <img src="/icons/plus.svg" alt="plus"/>
                     <h1>RECEBER DOAÇÃO</h1>
-                    <p>CADASTRE-SE OU FAÇA LOGIN</p>
+                    
+                    <p>CADASTRE-SE OU 
+                      <Link  href="/userLogin">
+                        <a title=""> FAÇA LOGIN</a> 
+                    </Link>
+                    </p>
                 </div>
 
                 <div className={styles.whiteLine1}></div>

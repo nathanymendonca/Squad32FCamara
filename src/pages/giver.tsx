@@ -2,6 +2,7 @@ import { Button } from '../components/Button/Button';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import styles from '../styles/pages/Giver.module.css';
+import Link from 'next/link'
 
 export default function Giver(){
     return(
@@ -23,6 +24,12 @@ export default function Giver(){
                     <img className={styles.example2} src="/images/example2.png" alt=""/>
                     <div className={styles.doar}>
                         <Button text="DOAR"/>
+
+                        <Link href="/">
+                            <a href="">
+                                <Button text="VOLTAR"/>
+                            </a>
+                        </Link>
                     </div>
 
     

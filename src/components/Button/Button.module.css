@@ -5,7 +5,7 @@
     margin: 4px 2px;
     transition-duration: 0.3s;
     cursor: pointer;
-    width: 102px;
+    width: max-content;
     height: 35px;
     align-items: center;
 

@@ -1,0 +1,25 @@
+.conteiner{
+    display: flex ; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    
+    text-align: center;
+    
+    color: #292929;
+    
+
+}
