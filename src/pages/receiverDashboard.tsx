@@ -1,9 +1,10 @@
-import Link from 'next/link'
+
 import MaterialTable from 'material-table'
-import { Button } from '../components/Button/Button'
+
 import { Footer } from '../components/Footer/Footer'
 import { Header } from '../components/Header/Header'
 import styles from '../styles/pages/receiverDashboard.module.css'
+import { Menu } from '../components/Menu/Menu'
 
 export default function receiverDashboard(){
     
@@ -13,23 +14,7 @@ export default function receiverDashboard(){
             <div className={styles.section}>
 
                 <div className={styles.sideboard}>
-                    <img src="/images/profile.png" alt="profile"/>
-                    <p>Usuário</p>
-                    <br/>
-
-                    <div className={styles.menu}>
-
-                        <h1>CADASTRO</h1>
-                        <h1>ESCOLAS CADASTRADAS</h1>
-                        <h1>AVISO DE RECEBIMENTO</h1>
-
-                        <Link href="/">
-                            <a href="">
-                            <Button text="SAIR"/>
-                            </a>
-                        </Link>
-
-                    </div>
+                    <Menu/>
                 </div>
 
                 <div className={styles.view}>
