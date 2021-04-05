@@ -1,17 +1,18 @@
 .container{
     display: flex;
     flex-direction: column;
-}
-
-.sideboard{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     align-items: center;
 }
+
+
 .section{
     display: flex;
     flex-direction: row;
     padding: 17px;
+    width: 100%;
+    justify-content: center;
+    
 }
 
 
@@ -20,4 +21,82 @@
     flex-direction: column;
     align-items: center;
     padding: 17px;
+}
+
+.data{
+    align-items: right;
+}
+
+.data p {
+    align-items: center;
+}
+
+.view p{
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #292929;
+
+}
+
+.responsibleData{ 
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.responsibleData h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    color: #292929;
+}
+
+.left{
+    width:350px;
+}
+
+.adress{
+    display: flex;
+    flex-direction:row;
+    width: max-content;
+
+}
+
+.adress h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    color: #292929;
+
+}
+
+.studentData{
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    width: max-content;
+
+}
+
+.studentData h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    color: #292929;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+
 }

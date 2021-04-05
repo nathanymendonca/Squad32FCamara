@@ -20,32 +20,89 @@ export default function receiverDashboard(){
                 <div className={styles.view}>
                     <img src="/images/logo.png" alt="logo"/>
                     <br/>
-                    <div className={styles.responsibleData}>
+                
+                    <div className={styles.data}>
+                        <p>Dados do Responsável</p>
+                        <br/>
+                        <div className={styles.responsibleData}>
+                            
+                            <div className={styles.left}>
+            
+                                <h1>Nome: Amarildo da Silva</h1>
+                                <h1>Email:amarido@gmail.com</h1>
+                                <h1>Sexo: masculino</h1>
+                                <h1>Telefone:(11)999999999</h1>
 
-                        <p>
-                            Dados do Responsável
+                            </div>
+
+                            <div>
+                                <br/>
+                                <h1>CPF: 000.000.000-00</h1>
+                                <h1>Estado Civil: Casado</h1> 
+                                <h1>Data de Nascimento: 12/03/1089</h1>
+                            </div>
+                        
+                        </div>
+                        <br/>
+                            <p>Dados do Aluno</p>
                             <br/>
-                            Nome: Amarildo da Silva
-                            Email:amarido@gmail.com
-                            Sexo: masculino
-                            Telefone:(11)999999999
+                        <div className={styles.studentData}>
+                            
+                            <div className={styles.left}>
+                                <h1>Nome: Diego da Silva</h1>
+                                <h1>CPF: 000.000.000-00</h1>
+                                <h1>Data de Nascimento: 17/08/2009</h1>
+                            </div>
 
-                        </p>
-                            CPF: 000.000.000-00
-                            Estado Civil: Casado 
-                            Data de Nascimento: 12/03/1089
+                            <div>
+                                <h1>Matrícula do Aluno: 000000</h1>
+                                <h1>Sexo: MASCULINO</h1> 
+                                <h1>Etapa de Ensino: 6° ano Ensino Fundamental</h1>
+                            </div>
+                        
+                        </div>
+                        <br/>
+                        <p>Endereço</p>
+                        <br/>
+                        <div className={styles.adress}>
+                            
+                            <div className={styles.left}>
+            
+                                <h1>CEP: 00000-000</h1>
+                                <h1>Logradouro: Rua das Andorinhas</h1>
+                                <h1>Bairro: Caramuru</h1>
+                                <h1>Estado: AC</h1>
+                                
 
+                            </div>
 
-                        <p>
+                            <div>
+                            
+                                <h1>Número: 10</h1>
+                                <h1>Cidade: Nova Detroit</h1> 
+                                <h1>Complemento: Próximo à Delegacia</h1>
+                            </div>
+                        </div>
+                        <br/>
+                        <p>Comprovante de renda</p>
 
-                        </p>
+                        <br/>
                     </div>
 
-                    
+                    <div className={styles.buttons}>
+                        <Link href="/">
+                            <a href="">
+                            <Button text="ATUALIZAR DADOS"/>
+                            </a>
+                        </Link>
 
-                    
+                        <Link href="/">
+                            <a href="">
+                            <Button text="CADASTRAR NOVO ALUNO"/>
+                            </a>
+                        </Link>
+                    </div>
                 </div>
-
 
             </div>
 
