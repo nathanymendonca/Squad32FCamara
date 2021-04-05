@@ -1,37 +1,163 @@
-import {Combobox} from 'evergreen-ui';
+import {Combobox, SearchIcon} from 'evergreen-ui';
+import Link from 'next/link'
 import styles from '../styles/pages/receiverRegister.module.css'
+import { Formik, Field, Form } from 'formik';
 import {Button} from '../components/Button/Button'
+import {data} from '../../data'
+import { TableSimple } from '../components/Table/TableSimpe';
+
+
 
 export default function receiverRegister(){
 
+    var  level = data.map(data => data.name === compara);
+    console.log(level)
+
+    var searchSchool = [];
+    var compara = searchSchool.toString()
+ 
+    
+
+    // var teste = data.find(data => data.uf === searchSchool.toString());
+    // console.log(teste);
+
+    // var ufs = data.map(data => data.uf);
+    // var newUfs = ufs.filter((este, i) => ufs.indexOf(este) === i);
+
+    // var  cities = data.map(data => data.city);
+    // var newCities = cities.filter((este, i) => cities.indexOf(este) === i);
+
+    // var  level = data.map(data => data.level;
+    // var newLevel = level.filter((este, i) => level.indexOf(este) === i);
+    
     return(
         <div className={styles.container}>
             <img src="/icons/logo2.svg" alt=""/>
 
-            <div className={styles.selects}>
+            <Formik
+            initialValues={{
+                schoolName: '',
+            
 
+            }}
+
+            onSubmit={async (values) => {
+                searchSchool.push(values)
+                await new Promise((r) => setTimeout(r, 500));
+                alert(JSON.stringify(values, null, 2));
+                // console.log(JSON.stringify(values, null, 2));
+                console.log(searchSchool);
+            }}
+            >
+            <Form>
+                <div className={styles.section}>
+                    <Field 
+                        width="50"
+                        id="schoolName"
+                        name="schoolName"
+                        placeholder="INSIRA NOME DA ESCOLA"
+                        type="input"
+                    />
+                <br/>
+
+                
+                    <Button type ="submit" text="PESQUISAR ESCOLA" />
+                
+                </div>
+            </Form>
+        </Formik>
+
+                        {/* <Link href="/">
+                        <a href="">
+                        <Button text="VOLTAR"/>
+                        </a>
+                        </Link> */}
+            {/* <div className={styles.selects}>
+    
                 <Combobox
-                    items={['Banana', 'Orange', 'Apple', 'Mango']}
-                    onChange={selected => console.log(selected)}
-                    placeholder="Fruit"
+                    items={newUfs}
+                    onChange={selected => searchSchool.push(selected)}
+                    placeholder="ESTADO"
                 />
                 <br/>
 
                 <Combobox
-                    items={['carro', 'avião', 'barco', 'Mango']}
-                    onChange={selected => console.log(selected)}
-                    placeholder="coisas"
+                    items={newCities}
+                    onChange={selected => searchSchool.push(selected)}
+                    placeholder="MUNICÍPIO"
                 />
                 <br/>
 
                 <Combobox
-                    items={['adriano', 'joão', 'daniel', 'Marcos']}
-                    onChange={selected => console.log(selected)}
-                    placeholder="nomes"
+                    items={newLevel}
+                    onChange={selected => searchSchool.push(selected)}
+                    placeholder="ETAPA DE ENSINO"
                 />
+
             </div>
             <br/>
             <Button text="BUSCAR"/>
+            <br/>
+            <div className={styles.schoolSelect}>
+                <Combobox
+                        
+                        items={data}
+                        onChange={selected => console.log()}
+                        placeholder="CLIQUE AQUI E SELECIONE A ESCOLA"
+                />
+            </div> */}
+            <br/>
+            
+
+            <TableSimple />
+
+            <br/>
+            Dados do Responsável
+
+            <Formik
+            initialValues={{
+                nome ='',
+                email ='',
+                cpf ='',
+                tel ='',
+                estado_civil ='', 
+                nascimento ='',
+                sexo ='',
+                comprovante ='',
+                senha ='',
+
+            }}
+
+            onSubmit={async (values) => {
+                searchSchool.push(values)
+                await new Promise((r) => setTimeout(r, 500));
+                alert(JSON.stringify(values, null, 2));
+                // console.log(JSON.stringify(values, null, 2));
+                console.log(searchSchool);
+            }}
+            >
+            <Form>
+                <div className={styles.section}>
+                    <Field 
+                        width="50"
+                        id="schoolName"
+                        name="schoolName"
+                        placeholder="INSIRA NOME DA ESCOLA"
+                        type="input"
+                    />
+                <br/>
+
+                
+                    <Button type ="submit" text="PESQUISAR ESCOLA" />
+                
+                </div>
+            </Form>
+        </Formik>
+
+
+            
+
+
 
             
 
