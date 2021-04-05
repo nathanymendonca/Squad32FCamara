@@ -35,8 +35,10 @@ const receiverLogin = () => (
                     <a title="">Esqueceu sua senha?</a> 
                     </Link>
 
-                    <button type="submit">ENTRAR</button>
+                    <Button type="submit" text="ENTRAR"/>
+
                     <br/>
+
                     <Link href="/">
                     <a href="">
                       <Button text="VOLTAR"/>

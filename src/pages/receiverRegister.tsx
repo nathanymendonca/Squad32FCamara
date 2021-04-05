@@ -3,18 +3,23 @@ import Link from 'next/link'
 import styles from '../styles/pages/receiverRegister.module.css'
 import { Formik, Field, Form } from 'formik';
 import {Button} from '../components/Button/Button'
-import {data} from '../../data'
-import { TableSimple } from '../components/Table/TableSimpe';
+
+import {TableSimple } from '../components/TableSimple/TableSimple';
 
 
 
 export default function receiverRegister(){
 
-    var  level = data.map(data => data.name === compara);
-    console.log(level)
+    return (
+        <div>oi</div>
+    )
+}
 
-    var searchSchool = [];
-    var compara = searchSchool.toString()
+    // var  level = data.map(data => data.name === compara);
+    // console.log(level)
+
+    // var searchSchool = [];
+    // var compara = searchSchool.toString()
  
     
 
@@ -30,139 +35,138 @@ export default function receiverRegister(){
     // var  level = data.map(data => data.level;
     // var newLevel = level.filter((este, i) => level.indexOf(este) === i);
     
-    return(
-        <div className={styles.container}>
-            <img src="/icons/logo2.svg" alt=""/>
+    // return(
+    //     <div>oi</div>
+    //     <div className={styles.container}>
 
-            <Formik
-            initialValues={{
-                schoolName: '',
+    //         <img src="/icons/logo2.svg" alt=""/>
+
+    //         <Formik
+    //         initialValues={{
+    //             schoolName: '',
             
 
-            }}
+    //         }}
 
-            onSubmit={async (values) => {
-                searchSchool.push(values)
-                await new Promise((r) => setTimeout(r, 500));
-                alert(JSON.stringify(values, null, 2));
-                // console.log(JSON.stringify(values, null, 2));
-                console.log(searchSchool);
-            }}
-            >
-            <Form>
-                <div className={styles.section}>
-                    <Field 
-                        width="50"
-                        id="schoolName"
-                        name="schoolName"
-                        placeholder="INSIRA NOME DA ESCOLA"
-                        type="input"
-                    />
-                <br/>
+    //         onSubmit={async (values) => {
+    //             searchSchool.push(values)
+    //             await new Promise((r) => setTimeout(r, 500));
+    //             alert(JSON.stringify(values, null, 2));
+    //             // console.log(JSON.stringify(values, null, 2));
+    //             console.log(searchSchool);
+    //         }}
+    //         >
+    //         <Form>
+    //             <div className={styles.section}>
+    //                 <Field 
+    //                     width="50"
+    //                     id="schoolName"
+    //                     name="schoolName"
+    //                     placeholder="INSIRA NOME DA ESCOLA"
+    //                     type="input"
+    //                 />
+    //             <br/>
 
                 
-                    <Button type ="submit" text="PESQUISAR ESCOLA" />
+    //                 <Button type ="submit" text="PESQUISAR ESCOLA" />
                 
-                </div>
-            </Form>
-        </Formik>
+    //             </div>
+    //         </Form>
+    //     </Formik>
 
-                        {/* <Link href="/">
-                        <a href="">
-                        <Button text="VOLTAR"/>
-                        </a>
-                        </Link> */}
-            {/* <div className={styles.selects}>
+    //                     <Link href="/">
+    //                     <a href="">
+    //                     <Button text="VOLTAR"/>
+    //                     </a>
+    //                     </Link> */}
+    //         <div className={styles.selects}>
     
-                <Combobox
-                    items={newUfs}
-                    onChange={selected => searchSchool.push(selected)}
-                    placeholder="ESTADO"
-                />
-                <br/>
+    //             <Combobox
+    //                 items={newUfs}
+    //                 onChange={selected => searchSchool.push(selected)}
+    //                 placeholder="ESTADO"
+    //             />
+    //             <br/>
 
-                <Combobox
-                    items={newCities}
-                    onChange={selected => searchSchool.push(selected)}
-                    placeholder="MUNICÍPIO"
-                />
-                <br/>
+    //             <Combobox
+    //                 items={newCities}
+    //                 onChange={selected => searchSchool.push(selected)}
+    //                 placeholder="MUNICÍPIO"
+    //             />
+    //             <br/>
 
-                <Combobox
-                    items={newLevel}
-                    onChange={selected => searchSchool.push(selected)}
-                    placeholder="ETAPA DE ENSINO"
-                />
+    //             <Combobox
+    //                 items={newLevel}
+    //                 onChange={selected => searchSchool.push(selected)}
+    //                 placeholder="ETAPA DE ENSINO"
+    //             />
 
-            </div>
-            <br/>
-            <Button text="BUSCAR"/>
-            <br/>
-            <div className={styles.schoolSelect}>
-                <Combobox
+    //         </div>
+    //         <br/>
+    //         <Button text="BUSCAR"/>
+    //         <br/>
+    //         <div className={styles.schoolSelect}>
+    //             <Combobox
                         
-                        items={data}
-                        onChange={selected => console.log()}
-                        placeholder="CLIQUE AQUI E SELECIONE A ESCOLA"
-                />
-            </div> */}
-            <br/>
+    //                     items={data}
+    //                     onChange={selected => console.log()}
+    //                     placeholder="CLIQUE AQUI E SELECIONE A ESCOLA"
+    //             />
+    //         </div> 
+    //         <br/>
             
 
-            <TableSimple />
+    //         <TableSimple />
 
-            <br/>
-            Dados do Responsável
+    //         <br/>
+    //         Dados do Responsável
 
-            <Formik
-            initialValues={{
-                nome ='',
-                email ='',
-                cpf ='',
-                tel ='',
-                estado_civil ='', 
-                nascimento ='',
-                sexo ='',
-                comprovante ='',
-                senha ='',
+    //         <Formik
+    //         initialValues={{
+    //             nome ='',
+    //             email ='',
+    //             cpf ='',
+    //             tel ='',
+    //             estado_civil ='', 
+    //             nascimento ='',
+    //             sexo ='',
+    //             comprovante ='',
+    //             senha ='',
 
-            }}
+    //         }}
 
-            onSubmit={async (values) => {
-                searchSchool.push(values)
-                await new Promise((r) => setTimeout(r, 500));
-                alert(JSON.stringify(values, null, 2));
-                // console.log(JSON.stringify(values, null, 2));
-                console.log(searchSchool);
-            }}
-            >
-            <Form>
-                <div className={styles.section}>
-                    <Field 
-                        width="50"
-                        id="schoolName"
-                        name="schoolName"
-                        placeholder="INSIRA NOME DA ESCOLA"
-                        type="input"
-                    />
-                <br/>
+    //         onSubmit={async (values) => {
+    //             searchSchool.push(values)
+    //             await new Promise((r) => setTimeout(r, 500));
+    //             alert(JSON.stringify(values, null, 2));
+    //             // console.log(JSON.stringify(values, null, 2));
+    //             console.log(searchSchool);
+    //         }}
+    //         >
+    //         <Form>
+    //             <div className={styles.section}>
+    //                 <Field 
+    //                     width="50"
+    //                     id="schoolName"
+    //                     name="schoolName"
+    //                     placeholder="INSIRA NOME DA ESCOLA"
+    //                     type="input"
+    //                 />
+    //             <br/>
 
                 
-                    <Button type ="submit" text="PESQUISAR ESCOLA" />
+    //                 <Button type ="submit" text="PESQUISAR ESCOLA" />
                 
-                </div>
-            </Form>
-        </Formik>
+    //             </div>
+    //         </Form>
+    //     </Formik>
+
+
+
 
 
             
 
 
-
-            
-
-
-        </div>
-    )
-
-}
+    //     </div>
+    // )

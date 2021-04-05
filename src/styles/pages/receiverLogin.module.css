@@ -11,3 +11,7 @@
     width: 200px;
     align-items: center;
 }
+
+.section a{
+    color:red;
+}
