@@ -1,6 +1,5 @@
 
 import MaterialTable from 'material-table'
-
 import { Footer } from '../components/Footer/Footer'
 import { Header } from '../components/Header/Header'
 import styles from '../styles/pages/receiverDashboard.module.css'
@@ -40,7 +39,8 @@ export default function receiverDashboard(){
                                     color: '#FFF'
                                 },
                                 toolbar:false,
-                                paging:false
+                                paging:false,
+                                sorting:false
                             }}
                             />
                         </div>
