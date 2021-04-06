@@ -25,14 +25,14 @@ export default function receiverDashboard(){
                             <MaterialTable
                             
                             columns={[
-                                { title: 'Aluno', field: 'name' },
-                                { title: 'Matricula', field: 'surname' },
-                                { title: 'Escola', field: 'birthYear',  },
-                                { title: 'Material Solicitado', field: 'birthCity', },
+                                { title: 'Aluno', field: '' },
+                                { title: 'Matricula', field: '' },
+                                { title: 'Escola', field: '',  },
+                                { title: 'Material Solicitado', field: '', },
                                 {title: 'Data', field:''},
                                 {title: 'Acessar aviso de recebimento', field:''}
                             ]}
-                            data={[{ name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 }]}
+                            data={[]}
                             options={{    
                                 headerStyle: {
                                     backgroundColor: '#9C4019',

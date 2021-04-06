@@ -15,3 +15,8 @@
 .section a{
     color:red;
 }
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}

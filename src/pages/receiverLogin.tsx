@@ -34,16 +34,26 @@ const receiverLogin = () => (
                     <Link  href="/receiverRecoverPass">
                     <a title="">Esqueceu sua senha?</a> 
                     </Link>
-
-                    <Button type="submit" text="ENTRAR"/>
-
                     <br/>
+                <div className={styles.buttons}>
 
-                    <Link href="/">
-                    <a href="">
-                      <Button text="VOLTAR"/>
-                    </a>
-                    </Link>
+                            <br/>
+
+                            <Link href="/">
+                                <a href="">
+                                    <Button text="VOLTAR"/>
+                                </a>
+                            </Link>
+
+                            <Link href="/receiverDashboard">
+                                <a href="">
+                                    <Button type="submit" text="ENTRAR"/>
+                                
+                                </a>
+                            </Link>
+
+                </div>
+            <br/>
             </div>
         </Form>
         </Formik>

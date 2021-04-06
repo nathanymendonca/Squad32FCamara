@@ -74,7 +74,7 @@ export default function Giver(){
                             />
                     </div>
                     <div className={styles.doar}>
-                        <br/>
+                        br
                         <Button text="DOAR"/>
 
                         <Link href="/">

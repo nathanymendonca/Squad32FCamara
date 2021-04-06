@@ -3,17 +3,13 @@ import Link from 'next/link'
 import styles from '../styles/pages/receiverRegister.module.css'
 import { Formik, Field, Form } from 'formik';
 import {Button} from '../components/Button/Button'
+// import {data} from '../../data'
+import MaterialTable from 'material-table'
 
-import {TableSimple } from '../components/TableSimple/TableSimple';
 
 
 
 export default function receiverRegister(){
-
-    return (
-        <div>oi</div>
-    )
-}
 
     // var  level = data.map(data => data.name === compara);
     // console.log(level)
@@ -35,138 +31,94 @@ export default function receiverRegister(){
     // var  level = data.map(data => data.level;
     // var newLevel = level.filter((este, i) => level.indexOf(este) === i);
     
-    // return(
-    //     <div>oi</div>
-    //     <div className={styles.container}>
+    return(
+        <div className={styles.container}>
+            <img src="/icons/logo2.svg" alt=""/>
 
-    //         <img src="/icons/logo2.svg" alt=""/>
-
-    //         <Formik
-    //         initialValues={{
-    //             schoolName: '',
-            
-
-    //         }}
-
-    //         onSubmit={async (values) => {
-    //             searchSchool.push(values)
-    //             await new Promise((r) => setTimeout(r, 500));
-    //             alert(JSON.stringify(values, null, 2));
-    //             // console.log(JSON.stringify(values, null, 2));
-    //             console.log(searchSchool);
-    //         }}
-    //         >
-    //         <Form>
-    //             <div className={styles.section}>
-    //                 <Field 
-    //                     width="50"
-    //                     id="schoolName"
-    //                     name="schoolName"
-    //                     placeholder="INSIRA NOME DA ESCOLA"
-    //                     type="input"
-    //                 />
-    //             <br/>
-
-                
-    //                 <Button type ="submit" text="PESQUISAR ESCOLA" />
-                
-    //             </div>
-    //         </Form>
-    //     </Formik>
-
-    //                     <Link href="/">
-    //                     <a href="">
-    //                     <Button text="VOLTAR"/>
-    //                     </a>
-    //                     </Link> */}
-    //         <div className={styles.selects}>
     
-    //             <Combobox
-    //                 items={newUfs}
-    //                 onChange={selected => searchSchool.push(selected)}
-    //                 placeholder="ESTADO"
-    //             />
-    //             <br/>
+           <div className={styles.selects}>
+    
+                <Combobox
+                    items={['teste']}
+                    onChange={selected => console.log(selected)}
+                    placeholder="ESTADO"
+                />
+                <br/>
 
-    //             <Combobox
-    //                 items={newCities}
-    //                 onChange={selected => searchSchool.push(selected)}
-    //                 placeholder="MUNICÍPIO"
-    //             />
-    //             <br/>
+                <Combobox
+                    items={['teste']}
+                    onChange={selected => console.log(selected)}
+                    placeholder="MUNICÍPIO"
+                />
+                <br/>
 
-    //             <Combobox
-    //                 items={newLevel}
-    //                 onChange={selected => searchSchool.push(selected)}
-    //                 placeholder="ETAPA DE ENSINO"
-    //             />
+                <Combobox
+                    items={['teste']}
+                    onChange={selected => console.log(selected)}
+                    placeholder="ETAPA DE ENSINO"
+                />
 
-    //         </div>
-    //         <br/>
-    //         <Button text="BUSCAR"/>
-    //         <br/>
-    //         <div className={styles.schoolSelect}>
-    //             <Combobox
+            </div>
+            <br/>
+            <div className={styles.schoolName}>
+                <h1>NOME DA ESCOLA</h1>
+                <Combobox 
+                            
+                            items={['teste']}
+                            onChange={selected => console.log(selected)}
+                
+                    />
+            </div>
+            <br/>
+            <Button text="BUSCAR"/>
+            <br/>
+            <div className={styles.schoolSelect}>
+                <Combobox 
                         
-    //                     items={data}
-    //                     onChange={selected => console.log()}
-    //                     placeholder="CLIQUE AQUI E SELECIONE A ESCOLA"
-    //             />
-    //         </div> 
-    //         <br/>
+                        items={['teste']}
+                        onChange={selected => console.log(selected)}
+                        placeholder="CLIQUE AQUI E SELECIONE A ESCOLA"
+                />
+            </div>
+            <br/>
+
+            <MaterialTable
+                            
+                            columns={[
+                                { title: 'Codigo da Escola', field: '' },
+                                { title: 'Nome da Escola', field: '' },
+                                { title: 'UF', field: '',  },
+                                { title: 'Município', field: '', },
+                                {title: 'CEP', field:''},
+                                {title: 'Endereço', field:''},
+                                {title: 'Categoria Administrativa', field:''},
+                                {title: 'Etapa de Ensino', field:''}
+                            ]}
+                            data={[{ name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 }]}
+                            options={{    
+                                headerStyle: {
+                                    backgroundColor: '#183b9c',
+                                    color: '#FFF'
+                                },
+                                toolbar:false,
+                                paging:false,
+                                sorting:false,
+                                
+                            }}
+                    />
             
 
-    //         <TableSimple />
-
-    //         <br/>
-    //         Dados do Responsável
-
-    //         <Formik
-    //         initialValues={{
-    //             nome ='',
-    //             email ='',
-    //             cpf ='',
-    //             tel ='',
-    //             estado_civil ='', 
-    //             nascimento ='',
-    //             sexo ='',
-    //             comprovante ='',
-    //             senha ='',
-
-    //         }}
-
-    //         onSubmit={async (values) => {
-    //             searchSchool.push(values)
-    //             await new Promise((r) => setTimeout(r, 500));
-    //             alert(JSON.stringify(values, null, 2));
-    //             // console.log(JSON.stringify(values, null, 2));
-    //             console.log(searchSchool);
-    //         }}
-    //         >
-    //         <Form>
-    //             <div className={styles.section}>
-    //                 <Field 
-    //                     width="50"
-    //                     id="schoolName"
-    //                     name="schoolName"
-    //                     placeholder="INSIRA NOME DA ESCOLA"
-    //                     type="input"
-    //                 />
-    //             <br/>
-
+                    <br/>
+        
                 
-    //                 <Button type ="submit" text="PESQUISAR ESCOLA" />
+                        <Link href="/">
+                            <a href="">
+                                <Button text="VOLTAR"/>
+                            </a>
+                        </Link> 
                 
-    //             </div>
-    //         </Form>
-    //     </Formik>
+                </div>
 
+    )
 
-
-
-
-            
-
-
-    //     </div>
-    // )
+}
